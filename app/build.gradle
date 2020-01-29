@@ -16,7 +16,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "API_KEY", getProperty("../../services/nasa.properties", "api_key")
         buildConfigField "String", "API_KEY",
                 getProperty("../../services/nasa.properties", "api_key")
         buildConfigField "String", "BASE_URL",
@@ -48,6 +47,8 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    implementation 'com.github.deep-dive-coding-java:android-utilities:2.0.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

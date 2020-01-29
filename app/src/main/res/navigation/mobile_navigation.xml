@@ -8,7 +8,7 @@
   <fragment
     android:id="@+id/navigation_image"
     android:label="@string/title_image"
-    android:name="edu.cnm.deepdive.nasaapod.ui.controller.ImageFragment"
+    android:name="edu.cnm.deepdive.nasaapod.controller.ImageFragment"
     tools:layout="@layout/fragment_image"/>
 
   <fragment

@@ -49,12 +49,12 @@ public class MainViewModel extends AndroidViewModel {
       @SuppressLint("SimpleDateFormat") DateFormat format = new SimpleDateFormat(DATE_FORMAT);
       String formattedDate = format.format(apodDate);
       Gson gson = new GsonBuilder()
-          .excludeFieldsWithoutExposeAnnotation()
           .setDateFormat("yyyy-MM-dd")
+          .excludeFieldsWithoutExposeAnnotation()
           .create();
       Retrofit retrofit = new Retrofit.Builder()
-          .baseUrl(BuildConfig.BASE_URL)
           .addConverterFactory(GsonConverterFactory.create(gson))
+          .baseUrl(BuildConfig.BASE_URL)
           .build();
       ApodService service = retrofit.create(ApodService.class);
       try {
