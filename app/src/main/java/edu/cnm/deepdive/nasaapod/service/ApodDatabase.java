@@ -6,6 +6,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
+import edu.cnm.deepdive.nasaapod.model.dao.AccessDao;
 import edu.cnm.deepdive.nasaapod.model.dao.ApodDao;
 import edu.cnm.deepdive.nasaapod.model.entity.Apod;
 import edu.cnm.deepdive.nasaapod.service.ApodDatabase.Converters;
@@ -32,6 +33,8 @@ public abstract class ApodDatabase extends RoomDatabase {
   }
 
   public abstract ApodDao getApodDao();
+
+  public abstract AccessDao getAccessDao();
 
   private static class InstanceHolder {
 
