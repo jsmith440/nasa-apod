@@ -122,4 +122,5 @@ public class Apod {
   public void setHdUrl(String hdUrl) {
     this.hdUrl = hdUrl;
   }
+
 }
