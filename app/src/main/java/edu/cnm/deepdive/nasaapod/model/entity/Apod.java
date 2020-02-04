@@ -46,7 +46,7 @@ public class Apod {
   @Expose
   private String url;
 
-  @ColumnInfo(name = "hdurl")
+  @ColumnInfo(name = "hd_url")
   @Expose
   @SerializedName("hdurl")
   private String hdUrl;
